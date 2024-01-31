@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, NO_ERRORS_SCHEMA } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { TodoList } from './todoList';
 import { TodoItem } from './todoItem';
@@ -8,7 +8,8 @@ import { TodoItem } from './todoItem';
   standalone: true,
   imports: [RouterOutlet],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrl: './app.component.css',
+  schemas:[NO_ERRORS_SCHEMA]
 })
 
 export class AppComponent {

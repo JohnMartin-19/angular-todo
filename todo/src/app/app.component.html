@@ -226,7 +226,10 @@
         </defs>
       </svg>
       <h1>Hello, {{ title }}</h1>
-      <p>Congratulations! Your app is running. 🎉</p>
+      <mat-toolbar color="primary" class="mat-elevation-z3">
+        <span>{{ username }}'s To Do List</span>
+        <mat-icon matBadge="{{ itemCount }}" matBadgeColor="accent">checklist</mat-icon>
+      </mat-toolbar>
       <h3>
         {{ username }}'s To Do List
         <h6>{{ itemCount}} Items</h6>
@@ -337,4 +340,3 @@
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
 
-<router-outlet />
