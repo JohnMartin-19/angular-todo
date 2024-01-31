@@ -1,11 +1,12 @@
-import { Component } from '@angular/core';
+import { Component,NO_ERRORS_SCHEMA } from '@angular/core';
 import { TodoList } from "./todoList";
 import { TodoItem } from "./todoItem";
 
 @Component({
     selector: 'app-root',
     templateUrl: './app.component.html',
-    styleUrls: ['./app.component.css']
+    styleUrls: ['./app.component.css'],
+    schemas:[NO_ERRORS_SCHEMA]
 })
 export class AppComponent {
     private list = new TodoList("John", [
