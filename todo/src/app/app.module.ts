@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule,NO_ERRORS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
@@ -9,7 +9,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatBadgeModule } from '@angular/material/badge';
-import { MatTableModule  } from '@angular/material/table';
+import { MatRowDef, MatTableModule  } from '@angular/material/table';
 import { MatCheckboxModule  } from '@angular/material/checkbox';
 import { MatFormFieldModule   } from '@angular/material/form-field';
 import { MatInputModule   } from '@angular/material/input';
@@ -19,7 +19,9 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
   declarations: [
     AppComponent
   ],
+  schemas:[NO_ERRORS_SCHEMA],
   imports: [
+    MatRowDef,
     AppComponent,
     BrowserModule,
     MatBadge,
